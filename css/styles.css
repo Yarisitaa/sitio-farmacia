@@ -1,0 +1,616 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, p {
+    text-align: center; /* Centra los títulos y párrafos */
+    margin: 20px auto;
+    width: 80%; /* Controla el ancho del texto */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra el contenido */
+    padding: 10px 20px;
+    background-color: #007bff;
+    flex-direction: column; /* Apila el logo y el menú */
+    text-align: center;
+}
+
+.contenido {
+    margin: 50px auto;
+    width: 80%;
+}
+
+.logo {
+    width: 300px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centra los elementos del menú */
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px; /* Espacio entre los elementos del menú */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: block;
+}
+
+.bienvenida {
+    text-align: center; /* Centra el texto */
+    margin-top: 50px; /* Espaciado desde la parte superior */
+    font-family: Arial, sans-serif;
+}
+
+.bienvenida h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #1f4d7f;
+}
+
+.bienvenida p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Sección de Servicios (Medicamentos y Consulta Médica) */
+.servicios, .consejos {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.servicio, .consejo {
+    display: inline-block;
+    width: 45%;
+    margin: 10px;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    vertical-align: top;
+}
+
+/* Imágenes */
+.servicio img, .consejo img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Títulos y textos */
+h2 {
+    color: #74aae4;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.servicio h3, .consejo p {
+    color: #333;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Contenedor principal */
+.mvo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin: 40px auto;
+    width: 80%;
+}
+
+/* Sección de consejos de salud */
+.consejos-salud {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.consejos-salud h2 {
+    color: #74aae4;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de los consejos */
+.consejos-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Estilos individuales para cada consejo */
+.consejo {
+    width: 40%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Imágenes dentro de los consejos */
+.consejo img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Títulos */
+.consejo h3 {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Descripción */
+.consejo p {
+    color: #333;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+/* Contenedor general */
+.quienes-somos {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Título */
+.quienes-somos h2 {
+    font-size: 32px; /* Tamaño grande del título */
+    color: #0056b3;    ;
+    margin-bottom: 20px;
+}
+
+/* Texto o párrafos */
+.quienes-somos p {
+    font-size: 18px; /* Tamaño mediano del texto */
+    color: #333;
+    line-height: 1.6; /* Espaciado entre líneas */
+    text-align: center;
+}
+
+
+/* Contenedor principal de Misión, Visión y Valores */
+.mision-vision-valores {
+    width: 80%;
+    margin: auto;
+}
+
+/* Bloques de Misión, Visión y Valores */
+.mvo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.7s ease-in-out;
+}
+
+/* Imágenes */
+.mvo img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Textos */
+.texto {
+    width: 70%;
+    text-align: left;
+}
+
+/* Títulos de Misión, Visión y Valores */
+.texto h3 {
+    color: #3A7CA5;
+    font-size: 22px;
+    text-align: center; /* Centra el título */
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+}
+
+.texto p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Animación para que aparezcan al hacer scroll */
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.intro-sintomas {
+    text-align: center;
+    margin: 40px auto;
+    width: 80%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.intro-sintomas h2 {
+    color: #0056b3;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.intro-sintomas p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/*tipos de enfermedades*/
+.titulo-enfermedades {
+    text-align: center;
+    font-size: 28px;
+    color: #6cace4;
+    margin-bottom: 30px;
+  }
+  
+  .fila-enfermedades {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  
+  .tarjeta-enfermedad {
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    width: 40%;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+    margin: 10px; /* ← Esto crea separación entre las tarjetas */
+  }  
+  
+  .tarjeta-enfermedad:hover {
+    transform: translateY(-5px);
+  }
+  
+  .tarjeta-enfermedad img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .tarjeta-enfermedad h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .tarjeta-enfermedad p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.4;
+  } 
+  
+  /*consejos*/
+  .consejos-salud {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .consejos-salud h2 {
+    font-size: 28px;
+    color: #1f4d7f;
+    margin-bottom: 30px;
+  }
+  
+  .consejos-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .consejo-item {
+    width: 300px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .consejo-item img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .consejo-item h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .consejo-item p {
+    font-size: 16px;
+    color: #555;
+  }
+
+  .medicamento-uso {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+  }
+  
+  .medicamento-uso h2 {
+    font-size: 28px;
+    color: #1f4d7f;
+    margin-bottom: 30px;
+  }
+  .medicamento-uso {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+  }
+  
+  .medicamento-uso h2 {
+    font-size: 28px;
+    color: #1f4d7f;
+    margin-bottom: 30px;
+  }
+  
+  .uso-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .uso-item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 45%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .uso-item img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .uso-item h3 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 15px;
+  }
+  
+  .uso-item p {
+    font-size: 16px;
+    color: #555;
+    margin-top: 10px;
+  }
+
+/*categoria-OTC*/
+.medicamentos {
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.medicamentos h2 {
+    color: #74aae4;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+.medicamento {
+    width: 22%;
+    display: inline-block;
+    margin: 1%;
+    vertical-align: top;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.medicamento img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.medicamento h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.medicamento p {
+    font-size: 14px;
+    color: #555;
+}  
+
+/* Estilo de cada sección */
+.mvo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1100px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Sección izquierda (título e icono) */
+.mvo-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    text-align: center;
+}
+
+.mvo-left h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.mvo-left img {
+    width: 60px; /* Tamaño del icono */
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Sección derecha (descripción) */
+.mvo-right {
+    width: 65%;
+    text-align: justify;
+}
+
+/* Animación de aparición */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; /* Hace que el contenido principal ocupe todo el espacio disponible */
+    padding: 20px;
+}
+
+/* Estilos del menú */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background: #007bff3c;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+}
+
+.menu a:hover {
+    background: #0056b3;
+}
+
+/* Submenú oculto */
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 50%; /* Posiciona el submenú en el centro */
+    transform: translateX(-50%); /* Centra completamente el submenú */
+    background-color: #007bff;
+    display: none;
+    width: 200px; /* Ajusta el ancho del submenú */
+    text-align: center; /* Centra el texto */
+}
+
+.submenu li {
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+
+.submenu a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+/* Mostrar submenú al pasar el cursor */
+.dropdown:hover .submenu {
+    display: block;
+}
+
+footer {
+    font-size: 14px;
+    background-color: #686a6cc0;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+}
+
+#buscador {
+  width: 50%;
+  padding: 10px;
+  font-size: 16px;
+  margin: 20px auto;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
